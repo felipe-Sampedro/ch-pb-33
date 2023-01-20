@@ -7,6 +7,7 @@ const config = require("./config");
 require('dotenv').config()
 
 
+app.use(express.static('public'));
 
 // const PORT = process.argv[2] || 8080;
 const PORT = +process.env.PORT || 8080;
