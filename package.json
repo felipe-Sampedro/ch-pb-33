@@ -2,9 +2,9 @@
   "name": "demo-pb-33",
   "version": "1.0.0",
   "description": "",
-  "main": "indexoriginal.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node indexoriginal.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
