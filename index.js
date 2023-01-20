@@ -1,18 +1,18 @@
 const express = require("express");
 // const apisRoutesProcess = require("./process/app.routers.fork");
-const cluster = require("cluster");
-const os = require("os");
-const config = require("./config");
+// const cluster = require("cluster");
+// const os = require("os");
+// const config = require("./config");
 // const logger = require("./logger/winston");
-require('dotenv').config()
+// require('dotenv').config()
 
 
-app.use(express.static('public'));
 
-// const PORT = process.argv[2] || 8080;
 const PORT = process.env.PORT || 8080;
+// const PORT = process.argv[2] || 8080;
 
 const app = express();
+app.use(express.static('public'));
 
 // app.use("/api", apisRoutesProcess);
 
