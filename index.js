@@ -10,7 +10,7 @@ require('dotenv').config()
 app.use(express.static('public'));
 
 // const PORT = process.argv[2] || 8080;
-const PORT = +process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
@@ -23,12 +23,12 @@ app.get("/", (req, res) => {
 
 
 //Muestra servidor
-app.get("/datos", (req, res) => {
-  const html = `Servidor express <span style="color: coral; font-weight: bold;">(NginX)</span> | ${PORT} - <b>PID => ${
-    process.pid
-  }</b> - ${new Date().toLocaleString()}`;
-  res.send(html);
-});
+// app.get("/datos", (req, res) => {
+//   const html = `Servidor express <span style="color: coral; font-weight: bold;">(NginX)</span> | ${PORT} - <b>PID => ${
+//     process.pid
+//   }</b> - ${new Date().toLocaleString()}`;
+//   res.send(html);
+// });
 
 // app.use('*', (req, res)=>{
 //     res.status(404).send({error:-2, descripcion:`ruta ${req.baseUrl} metodo ${req.method} no implementado`})
